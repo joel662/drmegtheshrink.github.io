@@ -1,0 +1,36 @@
+.parent-container {
+    display: flex;
+    justify-content: flex-end; /* Push the navbar-collapse to the right */
+  }
+.mt-4{
+    font-size: large;
+}  
+.card-text{
+    font-size: large;
+}
+footer {
+    background-color: #333; /* Choose your desired background color */
+    color: white;
+    text-align: center;
+    padding: 5px; /* Add padding for better appearance */
+    height: auto; /* Set the height to auto or adjust as needed */
+    width: 100%;
+}
+.btn{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.card{
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.card-img-top{
+    width: 95%;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-img-top:hover{
+    transform: scale(1.05); /* Increase the size by 10% on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}

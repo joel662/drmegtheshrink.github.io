@@ -1,0 +1,81 @@
+.parent-container {
+    display: flex;
+    justify-content: flex-end; /* Push the navbar-collapse to the right */
+  }
+.mt-4{
+    font-size: x-large;
+}
+h2{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px; 
+}  
+h4{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+p{
+    word-spacing: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.centered-list {
+    text-align: center;
+}
+.card-text{
+    font-size: large;
+}
+footer {
+    background-color: #333; /* Choose your desired background color */
+    color: white;
+    text-align: center;
+    padding: 5px; /* Add padding for better appearance */
+    height: auto; /* Set the height to auto or adjust as needed */
+    width: 100%;
+}
+.img-fluid{
+    height: 450px;
+    width: auto;
+    margin-bottom: 20px;
+}
+ul {
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the list */
+}
+ul li{
+    text-align: left;
+    margin-left:70px ;
+}
+#comment-section {
+    max-width: 400px !important; /* Updated width with !important */
+    max-height: fit-content;
+    margin: 0 auto;
+}
+
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 80%;
+}
+
+.votes {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.upvote, .downvote {
+    cursor: pointer;
+}
+.delete-comment {
+    color: red;
+    cursor: pointer;
+    float: right;
+}
+
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
