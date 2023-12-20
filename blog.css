@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&&display=swap');
+
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #0D1B2A;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #778DA9;
+    border-radius: 2px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #415A77;
+  }
+
 .parent-container {
     display: flex;
     justify-content: flex-end;
@@ -33,6 +55,7 @@ footer {
     margin-right: 10px;
     justify-content: center;
     align-items: center;
+    border: #778DA9 1px solid;
 }
 
 .card-img-top {
@@ -52,10 +75,271 @@ footer {
     height: 400px;
 }
 
-.mt-5 {
-    text-decoration: underline;
-}
 
 .card-text {
     text-align: left;
+}
+
+nav {
+    position: fixed;
+    padding-top: 2em !important;
+    font-weight: bold;
+    width: 100%;
+}
+
+body {
+    background-color: #09131D;
+    color: #F5F5F4;
+    width: 100%; /* Set the body width to 100% for responsiveness */
+    font-size: medium; /* Adjust the font size for better readability on mobile */
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0; /* Remove default body margin */
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.card {
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(13, 27, 42, 0.2);
+    color: #F5F5F4;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.card-img-top {
+    width: 30em;
+    height: 30em;
+    margin-top: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card-img-top:hover {
+    transform: scale(1.02); /* Increase the size by 5% on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}
+
+.btn {
+    margin: 1em 0 0 0;
+    background-color: #1B263B;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #415A77;
+}
+
+.nav-link {
+    color: #778DA9;
+
+}
+
+/* Hover Color for Navbar Links */
+.nav-link:hover {
+    color: #9badc5;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.socials {
+    background-color: #13283E;
+    color: white;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+}
+
+a:link {
+    color: #3F5671;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #778DA9;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #F5F5F4;
+}
+
+.blog-img {
+    width: 40em;
+    height: 30em;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 50% 25%;
+    margin-left: -3em;
+}
+
+.font-cardo {
+    font-size: 2.5em;
+    font-family: 'Cardo', serif;
+    user-select: none;
+}
+
+.blog-text {
+    width: 20em;
+}
+
+.card-text {
+    width: 25em;
+}
+
+.navbar-brand {
+    margin-top: -1em;
+}
+
+.scroll-button {
+    font-size: 4em; 
+    width: 7em;
+}
+
+.more-card {
+    padding-left: 200px;
+    padding-top: 200px;
+}
+
+.btn-special {
+    margin-bottom: -8em;
+}
+
+.btn-special-two {
+    margin-bottom: -5em;
+}
+
+.card-text {
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+@media (max-width: 1000px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100vw;
+        font-size: 1em;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .navbar-toggler {
+        margin-left: -2vw;
+    }
+
+    .card-text {
+        width: 100%;
+        font-size: 95%;
+    }
+
+    .parent-container {
+        justify-content: flex-start;
+    }
+
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    main{
+        flex:2;
+    }
+
+    .card-img-top {
+        width: 20em;
+        height: 20em;
+    }
+
+    .blog-img {
+        display: none;
+    }
+
+    .blog-text {
+        width: 90vw;
+        font-size: inherit;
+    }
+
+    .font-mobile {
+        font-size: 100%;
+    }
+
+    .scroll-button {
+        width: 85vw !important;
+    }
+
+    main {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .mt-5-custom {
+        margin-top: 1rem !important;
+    }
+
+    .card {
+        margin-right: 0;
+    }
+
+    .more-card {
+        padding: 0;
+        text-align: center;
+    }
+
+    .card-extra {
+        margin-right: 0;
+    }
+
+    .btn-special {
+        margin-bottom: 0;
+    }
+
+    .btn-special-two {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .my-5-custom {
+        margin-top: 3em !important;
+        margin-bottom: 3em !important;
+    }
+
+    .mt-5-custom {
+        margin-top: 3em !important;
+    }
+
+    .card-extra {
+        margin-right: 35px;
+        text-align: center;
+        padding:auto;
+    }
 }

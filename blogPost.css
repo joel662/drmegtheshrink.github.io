@@ -1,21 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&&display=swap');
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #0D1B2A;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #778DA9;
+    border-radius: 2px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #415A77;
+  }
+
+/* Navbar */
+nav {
+    position: fixed;
+    padding-top: 2em !important;
+    font-weight: bold;
+    width: 100%;
+}
+
+.nav-link {
+    color: #c0d7f5;
+
+}
+
+.nav-link:visited{
+    color: #c0d7f5;
+}
+
+.active {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Hover Color for Navbar Links */
+.nav-link:hover {
+    color: #9badc5; /* Maintain the hover color change for better visibility on mobile */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(211, 53%, 7.7%);
+    color: #F5F5F4;
+    width: 100%; /* Set the body width to 100% for responsiveness */
+    font-size: medium; /* Adjust the font size for better readability on mobile */
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0; /* Remove default body margin */
+    text-align: justify;
+    text-justify: inter-character;
+}
+
 .parent-container {
     display: flex;
     justify-content: flex-end; /* Push the navbar-collapse to the right */
   }
 .mt-4{
-    font-size: x-large;
-}
- @media (max-width: 768px) {
-            .mt-4 {
-                font-size: larger; /* Smaller font size for smaller screens */
-            }
-        }
-
-        /* Media query for screens smaller than 480px */
-@media (max-width: 480px) {
-    .mt-4 {
-        font-size: large; /* Even smaller font size for smaller screens */
-    }
+    font-size: large;
 }
     
 h2{
@@ -31,20 +81,13 @@ h4{
 p{
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 1.1em;
 }
 .centered-list {
     text-align: center;
 }
 .card-text{
     font-size: large;
-}
-footer {
-    background-color: #333; /* Choose your desired background color */
-    color: white;
-    text-align: center;
-    padding: 5px; /* Add padding for better appearance */
-    height: auto; /* Set the height to auto or adjust as needed */
-    width: 100%;
 }
 .img-fluid{
     height: 450px;
@@ -60,13 +103,135 @@ footer {
 }
 
 /* Media query for screens smaller than 480px */
-@media (max-width: 480px) {
-    .img-fluid {
-        height: 450px;
-        width: auto;
-        margin-bottom: 20px;
+@media (max-width: 1000px) {
+
+    body{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        font-size: 1em;
+        overflow-x: hidden;
     }
-}
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .navbar-toggler {
+        margin-left: -2vw;
+    }
+
+    .card-text {
+        width: 100%;
+        font-size: 95%;
+    }
+
+    .parent-container {
+        justify-content: flex-start;
+    }
+
+    .socials{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw !important;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .mt-4 {
+        font-size: 100%;
+        width: 80vw;
+        margin: 0 !important;
+    }
+
+    .blog-image {
+        border-radius: 10px;
+        height: 60vw !important;
+        width: 80vw !important;
+        margin-left: 1.3em !important;
+    }
+
+    .blog-image-c {
+        border-radius: 10px;
+        height: 60vw !important;
+        width: 80vw !important;
+        margin-left: 0 !important;
+        margin-bottom: 1em;
+    }
+
+    .blog-image-d {
+        border-radius: 10px;
+        height: 60vw !important;
+        width: 80vw !important;
+        margin-left: 0 !important;
+        margin-bottom: 1em;
+    }
+
+    p span {
+        font-size: small;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    strong {
+        font-size: 1.1em;
+    }
+
+    .left-image {
+        margin-left: 0 !important;
+    }
+
+    .right-image {
+        margin-right: 0 !important;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .hiden {
+        display: inline;
+    }
+
+    .margin-left-8 {
+        margin-left: 0 !important;
+    }
+
+    .margin-left-9 {
+        margin-left: 1em !important;
+    }
+
+    .width-24 {
+        width: 19em !important;
+    }
+
+    .final {
+        margin-left: 1.5em !important;
+    }
+} 
 
 ul {
     padding: 0; /* Remove default padding */
@@ -77,4 +242,99 @@ ul li{
     margin-left:70px ;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.socials {
+    color: white;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+}
+
+a:link {
+    color: #729dcf;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #778DA9;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #F5F5F4;
+}
+
+.btn {
+    margin: 1em 0 0 0;
+    background-color: #1B263B;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #415A77;
+}
+
+.drmeg-image {
+    border-radius: 10px;
+    height: fit-content;
+    width: 32em;
+}
+
+.who {
+    font-size: 3em;
+    font-family: 'Cardo', serif;
+    user-select: none;
+}
+
+.blog-image {
+    border-radius: 10px;
+    width: 50%;
+    height: 30vw;
+    width: 35vw;
+}
+
+.blog-image-c {
+    border-radius: 10px;
+    width: 50%;
+    height: 30vw;
+    width: 35vw;
+}
+
+.blog-image-d {
+    border-radius: 10px;
+    width: 50%;
+    height: 30vw;
+    width: 35vw;
+    margin-top: 6em;
+}
+
+.content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mt-5-custom {
+    text-align: center;
+    font-size: medium;
+}
+
+.hiden {
+    display: hidden;
+}
+
+.margin-left-8 {
+    margin-left: 8em;
+}
+
+.margin-left-9 {
+    margin-left: 9em;
+}
+
+.width-24 {
+    width: 24em;
+}

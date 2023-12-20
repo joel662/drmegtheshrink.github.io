@@ -1,36 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&&display=swap');
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #0D1B2A;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #778DA9;
+    border-radius: 2px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #415A77;
+  }
+
+/* Navbar */
+nav {
+    position: fixed;
+    padding-top: 2em !important;
+    font-weight: bold;
+    width: 100%;
+}
+
 .parent-container {
     display: flex;
     justify-content: flex-end; /* Push the navbar-collapse to the right */
-  }
-.mt-4{
-    font-size: large;
-}  
-.card-text{
-    font-size: large;
 }
-footer {
-    background-color: #333; /* Choose your desired background color */
-    color: white;
-    text-align: center;
-    padding: 5px; /* Add padding for better appearance */
-    height: auto; /* Set the height to auto or adjust as needed */
-    width: 100%;
+
+.card-container {
+    margin-left: 7em;
+    width: 100vw;
 }
-.btn{
-    margin-right: 10px;
-    margin-bottom: 10px;
+
+.card-text {
+    width: 30em;
 }
-.card{
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.who {
+    font-size: 2.5em;
+    font-family: 'Cardo', serif;
+    user-select: none;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+@media (max-width: 768px) {
+    .parent-container {
+        justify-content: flex-start; /* Adjust for smaller screens */
+    }
+}
+
+/* Body */
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("drmeg.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #0D1B2A;
+    background-size: 100% 100vh;
+    backdrop-filter: brightness(70%);
+    background-size: 100% 100vh;
+    background-clip: border-box;
+
+    color: #F5F5F4;
+    width: 100%; /* Set the body width to 100% for responsiveness */
+    font-size: medium; /* Adjust the font size for better readability on mobile */
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0; /* Remove default body margin */
+}
+
+/* Cards and Buttons */
+.card {
     margin-right: 10px;
     justify-content: center;
     align-items: center;
 }
-.card-img-top{
-    width: 95%;
-    margin-top: 10px;
+
+.card-img-top {
+    width: 100%; /* Make images responsive within the card */
+    margin-top: 1em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card-img-top:hover{
-    transform: scale(1.05); /* Increase the size by 10% on hover */
+
+.card-img-top:hover {
+    transform: scale(1.02); /* Increase the size by 5% on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}
+
+.btn {
+    margin: 1em 0 0 0;
+    background-color: #1B263B;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #415A77;
+}
+
+.badass {
+    font-size: 150%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: #F5F5F4;
+    -webkit-text-stroke: 0.01em #0D1B2A;
+}
+
+.service {
+    font-size: 80%;
+}
+
+/* Main Content */
+.quote {
+    margin-bottom: 1em; /* Adjust spacing for the quote on smaller screens */
+}
+
+.quote-text {
+    font-family: Cardo, serif;
+    font-style: italic;
+    font-size: 130%;
+}
+
+.card {
+    background-color: rgba(13, 27, 42, 0.2);
+    color: #F5F5F4;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.about-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1em;
+}
+
+.nav-link {
+    color: #c0d7f5;
+
+}
+
+.nav-link:visited{
+    color: #c0d7f5;
+}
+
+/* Hover Color for Navbar Links */
+.nav-link:hover {
+    color: #9badc5; /* Maintain the hover color change for better visibility on mobile */
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.front {
+    margin-top: -5em;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    background-color: #13283E;
+    color: white;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+}
+
+a:link {
+    color: #3F5671;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #778DA9;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #F5F5F4;
+}
+
+.img-corner {
+    border-radius: 10px;
+    height: fit-content;
+    width: 32em;
+    object-fit: fill;
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+.text-centre {
+    margin-left: -4em;
+}
+
+.newline {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    body{
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: none;
+        background-color: #09131D !important;
+        backdrop-filter: brightness(100%);
+
+    }
+
+    body > * {
+        width: 100% !important;
+    }
+
+    .newline {
+        display: inline;
+    }
+
+    .img-corner{
+        width: 100%;
+    }
+
+    .card-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    main {
+        width: 50vh;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .navbar-toggler {
+        margin-left: -2vw;
+    }
+
+    .lead {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: clamp(1px, 30vw, 1em);
+        font-size: 2em;
+    }
+
+    .who {
+        font-size: 2em;
+    }
+
+    .card-text {
+        width: 100%;
+    }
+
+    .parent-container {
+        justify-content: flex-start;
+    }
+
+    .social-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    main{
+        flex:2;
+    }
+
+    footer {
+        width: 100% !important;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+
+    .carousel {
+        width: 100% !important;
+    }
+
+    .text-centre {
+        margin-left: 0;
+    }
+
+    .socials {
+        width: 15em;
+        background-color: #09131D;
+    }
+
+    nav {
+        width: 100% !important;
+    }
 }
