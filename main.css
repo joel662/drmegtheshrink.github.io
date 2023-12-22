@@ -242,6 +242,7 @@ a:hover {
     }
 
     .img-corner{
+        height: auto;
         width: 100%;
     }
 
