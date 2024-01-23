@@ -1,5 +1,5 @@
 $('.carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
+    var minPerSlide = 1;
     var next = $(this).next();
     if (!next.length) {
     next = $(this).siblings(':first');
